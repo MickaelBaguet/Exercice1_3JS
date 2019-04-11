@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercice 1</title>
+  </head>
+  <body>
+      <img src="images/image1.jpg" id="image1"/>
+
+      <script type="text/javascript">
+        var image = document.getElementById('image1');
+        // Quand on survol l'image on lance la fonction :
+        image.addEventListener('mouseover', function()
+        {
+          // On change le border de l'élément
+          document.getElementById("image1").style.border = "3px red solid";
+        });
+        // Quand on quitte le survol :
+        image.addEventListener('mouseout', function()
+        {
+          // On réinitialise le border
+          document.getElementById("image1").style.border = "";
+        });
+      </script>
+
+  </body>
+</html>
